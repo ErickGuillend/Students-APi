@@ -1,0 +1,65 @@
+GET http://localhost:3500/api/students
+
+###
+
+POST http://localhost:3500/api/students
+Content-Type: application/json
+
+{
+    "nombre": "Juanito Olvera Cruz",
+    "correo": "juanitoo@gmail.com",
+    "materias": {
+        "nombre": "Frances",
+        "calificacion": 100,
+        "comentario": "Excelente desempeño"
+    }
+}
+
+###
+
+PUT http://localhost:3500/api/students/62cf0d0403dc2371d94dc759
+Content-Type: application/json
+
+{
+    "correo": "javigonzaaal@gmail.com"
+}
+
+###
+
+DELETE http://localhost:3500/api/students/62cf0d0403dc2371d94dc759
+
+
+// ------ MATERIAS
+
+###
+
+GET http://localhost:3500/api/materias/62d080af84519922fe4827d5
+
+
+
+###
+
+POST http://localhost:3500/api/materias/62d05b9b4db8a3be27fa4c26
+Content-Type: application/json
+
+{
+    "nombre": "Español",
+        "calificacion": 88,
+        "comentario": "Seguir practicando para mejor la calificación"
+}
+
+
+###
+
+DELETE http://localhost:3500/api/materias/62cf4f7727ea9b6af4c20e5a/62cf52c3b76f1490abc9ea07
+
+###
+
+PUT  http://localhost:3500/api/materias/62d05b9b4db8a3be27fa4c26/62d05bec4db8a3be27fa4c2c
+Content-Type: application/json
+
+{
+    "calificacion": 90,
+    "comentario": "Debe una tarea todavía"
+}
+
